@@ -1,0 +1,44 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-10-17/server.schema.json",
+  "name": "io.github.andquemori/strata-b2a-mcp",
+  "title": "STRATA & TrashPan B2A Public Data, KYB, TCG Market & Golf EV MCP Server",
+  "description": "Zero-PII B2A 2-Story Remote MCP Server (15 streams, 49 tools). Free 1st Floor probe_inventory & tools/list ($0, no API key); 2nd Floor via X-MCP-API-Key, x402 Base USDC, or Apify Store PPE.",
+  "version": "2.1.0",
+  "repository": {
+    "url": "https://github.com/andquemori/strata-b2a-mcp",
+    "source": "github"
+  },
+  "websiteUrl": "https://andque.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://trashpan-recycle-worker.moremasatoshi.workers.dev/mcp",
+      "headers": [
+        {
+          "name": "X-MCP-API-Key",
+          "description": "Optional for 1st Floor (tools/list and probe_inventory are 100% free without key). Required only for 2nd Floor paid full data execution.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ],
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@andq/strata-b2a-mcp",
+      "version": "2.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "MCP_API_KEY",
+          "description": "Optional API key for 2nd Floor full data calls. Leave empty to use Free 1st Floor tools/list and probe_inventory.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
