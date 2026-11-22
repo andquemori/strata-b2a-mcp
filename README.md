@@ -2,7 +2,7 @@
 
 > **Operated by andQ Inc. / 株式会社andQ** (Corporate Number: `6010001269339` | Web: [https://andque.com](https://andque.com) | Contact: `m.m@andque.com`)
 >
-> **Zero-PII Business-to-Agent (B2A) Structured Data & Deterministic Calculation Infrastructure** — **15 Commercial Data Streams**, **16 Apify Store Pay-Per-Event Actors**, **15 x402 v2 Base Mainnet USDC Paywalls** (Lumière PayCheck **Grade A 100/100**), and **50 MCP Tools** (`1 Free probe_inventory + 15 Primary Stream Tools + 34 Specialized Verb Tools`).
+> **Zero-PII Business-to-Agent (B2A) Structured Data & Deterministic Calculation Infrastructure** — **15 Commercial Data Streams**, **16 Apify Store Pay-Per-Event Actors**, **15 x402 v2 Base Mainnet USDC Paywalls** (Lumière PayCheck **Grade A 100/100**), and **52 MCP Tools** (`1 Free probe_inventory + 15 Primary Stream Tools + 36 Specialized Verb Tools`).
 
 ---
 
@@ -16,11 +16,11 @@
 ### 1st Floor (100% FREE / `$0.000` / No API Key Required)
 Any MCP client (Claude Desktop, Cursor, Claude Code, Windsurf, Smithery, Glama, PulseMCP) can connect immediately **without an API key**:
 - `initialize` & `notifications/initialized`
-- `tools/list` (Lists all **49 MCP tools**)
-- `tools/call` -> **`probe_inventory`** (`$0.000`): Checks whether a target domain, company ATS board, trend keyword, Japanese corporate KYB record, court foreclosure, POI location, OLIPAI TCG SKU, academic R&D paper, or ANSR Golf EV/SG profile matrix is in stock, returning its **SHA-256 fingerprint**, **24-hour freshness**, and instant purchase links. Unindexed queries are automatically queued into **AIGREED** for auto-restock.
+- `tools/list` (Lists all **52 MCP tools**)
+- `tools/call` -> **`probe_inventory`** (`$0.000`): Checks whether a target domain, company ATS board, trend keyword, Japanese corporate KYB record, court foreclosure, POI location, OLIPAI TCG SKU, academic R&D paper, or ANSR Golf EV/SG/Course profile matrix is in stock, returning its **SHA-256 fingerprint**, **24-hour freshness**, and instant purchase links. Unindexed queries are automatically queued into **AIGREED** for auto-restock.
 
 ### 2nd Floor (Full Structured Data Execution)
-When calling any of the 48 data/calculation tools:
+When calling any of the 51 data/calculation tools:
 1. **With `X-MCP-API-Key` (`MCP_API_KEY`)**: Returns full normalized JSON immediately (with Sigstore Rekor / TAPP transparency seal provenance).
 2. **Without `X-MCP-API-Key`**: Returns a structured self-resolution guide pointing the AI agent to:
    - Free `probe_inventory` check (`$0.000`)
@@ -86,14 +86,14 @@ claude mcp add --transport http strata-b2a https://trashpan-recycle-worker.morem
 | **10** | `jp-edinet-financial-macro-feed`<br>(`jp_edinet_financial_macro_feed`) | `$0.006` | [`andque/jp-edinet-financial-macro-feed`](https://apify.com/andque/jp-edinet-financial-macro-feed) | FSA EDINET v2 Corporate Securities Filings, Ministry of Finance JGB Yield Curve, FX/BTC Macro & National Diet Laws |
 | **11** | `jp-patent-saas-b2a-delta`<br>(`jp_patent_saas_b2a_delta`) | `$0.006` | [`andque/jp-patent-saas-b2a-delta`](https://apify.com/andque/jp-patent-saas-b2a-delta) | Japan Patent Office (JPO API v1) Examination Progress & 100 Japanese SaaS B2A Readiness / Pricing / ToS SHA-256 Delta |
 | **12** | `jp-real-economy-geospatial-feed`<br>(`jp_real_economy_geospatial_feed`) | `$0.005` | [`andque/jp-real-economy-geospatial-feed`](https://apify.com/andque/jp-real-economy-geospatial-feed) | Tokyo Toyosu/Ota Wholesale Market Daily Prices, MIC e-Stat Construction/Labor, MLIT PLATEAU 3D Cities & G-Space Catalog |
-| **13** | `ansr-golf-ev-engine`<br>(`ansr_golf_ev_engine`) | `$0.005` | [`andque/ansr-golf-strokes-gained-ev-engine`](https://apify.com/andque/ansr-golf-strokes-gained-ev-engine) | **157,480-Point ANSR Golf Expected Value (EV), Single-Shot Strokes Gained (SG) & Course Strategy Black-Box Engine** (62 Core Scores × 16 Driving Bands) |
+| **13** | `ansr-golf-ev-engine`<br>(`ansr_golf_ev_engine`) | `$0.005` | [`andque/ansr-golf-strokes-gained-ev-engine`](https://apify.com/andque/ansr-golf-strokes-gained-ev-engine) | **157,480-Point ANSR Golf Expected Value (EV), Single-Shot Strokes Gained (SG), ShotCircle Dispersion & National 2,005 Golf Courses (4,647 Courses / 41,825 Holes) GPS GamePlan Engine** |
 | **14** | `jp-places-poi-geospatial-intel`<br>(`jp_places_poi_geospatial_intel`) | `$0.005` | [`andque/jp-places-poi-geospatial-intel`](https://apify.com/andque/jp-places-poi-geospatial-intel) | 100% Legal Japan Area POI, GSI Geocoding & 1m Laser Elevation, NIED J-SHIS Seismic Hazard, MHLW Hospitals & PLATEAU 3D |
 | **15** | `olipai-jp-tcg-collectibles-market`<br>(`olipai_jp_tcg_collectibles_market`) | `$0.006` | [`andque/olipai-jp-tcg-collectibles-market`](https://apify.com/andque/olipai-jp-tcg-collectibles-market) | OLIPAI Japan Trading Card Game (Pokemon / JP Collector Foil MTG / Yu-Gi-Oh!) Secondary Market Floor Price & Cross-Venue Spread |
 | **16** | `jp-academic-rnd-patent-citation-feed`<br>(`jp_academic_rnd_patent_citation_feed`) | `$0.006` | [`andque/jp-academic-rnd-patent-citation-feed`](https://apify.com/andque/jp-academic-rnd-patent-citation-feed) | Japan Academic R&D High-Citation Papers (OpenAlex CC0), Biomedical/AI Articles (NIH PubMed) & JPO Patent Citations |
 
 ---
 
-## All 34 Specialized Verb-First MCP Tools (+ `probe_inventory`)
+## All 36 Specialized Verb-First MCP Tools (+ `probe_inventory`)
 
 | Tool Name | Backed By Stream | Default Mode / Filter |
 | :--- | :--- | :--- |
@@ -112,7 +112,7 @@ claude mcp add --transport http strata-b2a https://trashpan-recycle-worker.morem
 | `search_jp_gov_procurement_awards` | `jp-giteki-tenders-intel` | `feedType: "procurement_awards"` |
 | `search_jp_public_subsidies_jgrants` | `jp-giteki-tenders-intel` | `feedType: "subsidies"` |
 | `search_cisa_kev_exploited_vulnerabilities` | `cisa-kev-threat-ai-status` | `feedType: "cisa_kev"` |
-| `check_urlhaus_malicious_url_iocs` | `cisa-kev-threat-ai-status` | `feedType: "urlhaus_ioc"` |
+| `search_cisa_kev_ransomware_campaigns` | `cisa-kev-threat-ai-status` | `feedType: "cisa_kev", ransomwareOnly: true` |
 | `check_ai_cloud_provider_status` | `cisa-kev-threat-ai-status` | `feedType: "ai_cloud_status"` |
 | `search_jp_hospitals_and_medical_facilities` | `jp-healthcare-hospitals-directory` | All 7,715 MHLW hospitals |
 | `search_jp_edinet_securities_filings` | `jp-edinet-financial-macro-feed` | `feedType: "edinet_filings"` |
@@ -126,6 +126,8 @@ claude mcp add --transport http strata-b2a https://trashpan-recycle-worker.morem
 | `calculate_golf_strokes_gained` | `ansr-golf-ev-engine` | `mode: "sg"` (Single-shot Strokes Gained, OB re-tee `-2.0`) |
 | `calculate_golf_target_ev_distance` | `ansr-golf-ev-engine` | `mode: "strategy"` (Linear interpolation reverse distance lookup + target dispersion) |
 | `calculate_golf_shot_dispersion` | `ansr-golf-ev-engine` | `mode: "dispersion"` (ShotCircle landing dispersion ellipse & 8-level benchmarks) |
+| `search_jp_golf_courses` | `ansr-golf-ev-engine` | `mode: "course_search"` (Search 2,005 Japanese golf facilities / 4,647 courses / 41,825 holes GPS) |
+| `calculate_golf_hole_gameplan` | `ansr-golf-ev-engine` | `mode: "hole_strategy"` (Hole-by-hole GPS GamePlan, bearing, SG=0 landing coordinates & tee/approach dispersion) |
 | `search_jp_area_poi_and_facilities` | `jp-places-poi-geospatial-intel` | `category: "all"` |
 | `check_jp_location_seismic_and_plateau_3d` | `jp-places-poi-geospatial-intel` | `category: "location_seismic_elevation"` |
 | `get_jp_tcg_collectibles_floor_price` | `olipai-jp-tcg-collectibles-market` | `game: "all"` |
