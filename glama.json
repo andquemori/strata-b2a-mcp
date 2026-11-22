@@ -4,7 +4,7 @@
     "andquemori"
   ],
   "name": "andque-strata-b2a-mcp",
-  "description": "Zero-PII B2A (Business-to-Agent) 2-Story Remote MCP Server operated by andQ Inc. (Corporate Number: 6010001269339). Free 1st Floor ($0, no API key) for tools/list (49 tools across 15 streams) and probe_inventory; Paid 2nd Floor for Japanese Corporate KYB, Court Foreclosures, Giteki/Gov Procurement, MHLW Hospitals, EDINET/JGB, Patent/SaaS B2A Delta, Real Economy/PLATEAU 3D, Area POI/Seismic Hazard, OLIPAI TCG Market Floor, Academic R&D/PubMed, Domain B2A Readiness, ATS Jobs, Google Trends, and 157,480-point ANSR Golf EV & Strokes Gained Engine.",
+  "description": "Zero-PII B2A (Business-to-Agent) 2-Story Remote MCP Server operated by andQ Inc. (Corporate Number: 6010001269339). Free 1st Floor ($0, no API key) for tools/list (50 tools across 15 streams) and probe_inventory; Paid 2nd Floor for Japanese Corporate KYB, Court Foreclosures, Giteki/Gov Procurement, MHLW Hospitals, EDINET/JGB, Patent/SaaS B2A Delta, Real Economy/PLATEAU 3D, Area POI/Seismic Hazard, OLIPAI TCG Market Floor, Academic R&D/PubMed, Domain B2A Readiness, ATS Jobs, Google Trends, and 157,480-point ANSR Golf EV, Strokes Gained & ShotCircle Dispersion Engine.",
   "remoteUrl": "https://trashpan-recycle-worker.moremasatoshi.workers.dev/mcp",
   "discoveryUrl": "https://trashpan-recycle-worker.moremasatoshi.workers.dev/.well-known/mcp.json",
   "x402DiscoveryUrl": "https://trashpan-recycle-worker.moremasatoshi.workers.dev/.well-known/x402.json",

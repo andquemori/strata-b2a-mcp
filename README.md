@@ -2,7 +2,7 @@
 
 > **Operated by andQ Inc. / 株式会社andQ** (Corporate Number: `6010001269339` | Web: [https://andque.com](https://andque.com) | Contact: `m.m@andque.com`)
 >
-> **Zero-PII Business-to-Agent (B2A) Structured Data & Deterministic Calculation Infrastructure** — **15 Commercial Data Streams**, **16 Apify Store Pay-Per-Event Actors**, **15 x402 v2 Base Mainnet USDC Paywalls** (Lumière PayCheck **Grade A 100/100**), and **49 MCP Tools** (`1 Free probe_inventory + 15 Primary Stream Tools + 33 Specialized Verb Tools`).
+> **Zero-PII Business-to-Agent (B2A) Structured Data & Deterministic Calculation Infrastructure** — **15 Commercial Data Streams**, **16 Apify Store Pay-Per-Event Actors**, **15 x402 v2 Base Mainnet USDC Paywalls** (Lumière PayCheck **Grade A 100/100**), and **50 MCP Tools** (`1 Free probe_inventory + 15 Primary Stream Tools + 34 Specialized Verb Tools`).
 
 ---
 
@@ -93,7 +93,7 @@ claude mcp add --transport http strata-b2a https://trashpan-recycle-worker.morem
 
 ---
 
-## All 33 Specialized Verb-First MCP Tools (+ `probe_inventory`)
+## All 34 Specialized Verb-First MCP Tools (+ `probe_inventory`)
 
 | Tool Name | Backed By Stream | Default Mode / Filter |
 | :--- | :--- | :--- |
@@ -124,7 +124,8 @@ claude mcp add --transport http strata-b2a https://trashpan-recycle-worker.morem
 | `search_jp_plateau_3d_and_gspace_geospatial` | `jp-real-economy-geospatial-feed` | `feedType: "geospatial_3d_urban"` |
 | `calculate_golf_shot_ev` | `ansr-golf-ev-engine` | `mode: "ev"` (Expected strokes to hole out by skill & lie) |
 | `calculate_golf_strokes_gained` | `ansr-golf-ev-engine` | `mode: "sg"` (Single-shot Strokes Gained, OB re-tee `-2.0`) |
-| `calculate_golf_target_ev_distance` | `ansr-golf-ev-engine` | `mode: "strategy"` (Linear interpolation reverse distance lookup) |
+| `calculate_golf_target_ev_distance` | `ansr-golf-ev-engine` | `mode: "strategy"` (Linear interpolation reverse distance lookup + target dispersion) |
+| `calculate_golf_shot_dispersion` | `ansr-golf-ev-engine` | `mode: "dispersion"` (ShotCircle landing dispersion ellipse & 8-level benchmarks) |
 | `search_jp_area_poi_and_facilities` | `jp-places-poi-geospatial-intel` | `category: "all"` |
 | `check_jp_location_seismic_and_plateau_3d` | `jp-places-poi-geospatial-intel` | `category: "location_seismic_elevation"` |
 | `get_jp_tcg_collectibles_floor_price` | `olipai-jp-tcg-collectibles-market` | `game: "all"` |

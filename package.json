@@ -1,7 +1,7 @@
 {
   "name": "@andq/strata-b2a-mcp",
-  "version": "2.1.0",
-  "description": "Zero-PII B2A (Business-to-Agent) 2-Story Remote MCP Server & Zero-Dependency Stdio Bridge (15 Commercial Data Streams, 49 MCP Tools, Free probe_inventory, x402 Base Mainnet USDC & Apify Store PPE).",
+  "version": "2.2.0",
+  "description": "Zero-PII B2A (Business-to-Agent) 2-Story Remote MCP Server & Zero-Dependency Stdio Bridge (15 Commercial Data Streams, 50 MCP Tools, Free probe_inventory, x402 Base Mainnet USDC & Apify Store PPE).",
   "type": "module",
   "main": "index.mjs",
   "bin": {

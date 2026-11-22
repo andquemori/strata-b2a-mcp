@@ -6,7 +6,7 @@ startCommand:
     properties:
       mcpApiKey:
         type: string
-        description: Optional X-MCP-API-Key for 2nd Floor paid full data execution. Leave blank to use Free 1st Floor tools/list (49 tools) and probe_inventory ($0).
+        description: Optional X-MCP-API-Key for 2nd Floor paid full data execution. Leave blank to use Free 1st Floor tools/list (50 tools) and probe_inventory ($0).
       mcpEndpointUrl:
         type: string
         default: https://trashpan-recycle-worker.moremasatoshi.workers.dev/mcp
