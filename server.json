@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-10-17/server.schema.json",
   "name": "io.github.andquemori/strata-b2a-mcp",
   "title": "STRATA & TrashPan B2A Public Data, JP Corporate KYB (5,000 Hot-Index), TCG & Golf EV MCP",
-  "description": "Zero-PII B2A 2-Story Remote MCP Server (16 streams, 118 tools, 5,000 verified JP corporations). Free 1st Floor probe_inventory & tools/list ($0, no API key); 2nd Floor via X-MCP-API-Key, x402 v2 Base USDC, or Apify Store PPE.",
+  "description": "Zero-PII B2A Remote MCP: 16 streams, 118 tools, 5,000 JP corps KYB, TCG, Golf EV, x402 & Free probe",
   "version": "2.4.0",
   "repository": {
     "url": "https://github.com/andquemori/strata-b2a-mcp",

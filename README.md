@@ -2,7 +2,16 @@
 
 > **Operated by andQ Inc. / 株式会社andQ** (Corporate Number: `6010001269339` | Web: [https://andque.com](https://andque.com) | B2A Portal: [https://strata.andque.com](https://strata.andque.com) | Contact: `m.m@andque.com`)
 >
-> **Zero-PII Business-to-Agent (B2A) Structured Data & Deterministic Calculation Infrastructure** — **16 Commercial Data Streams**, **17 Apify Store Pay-Per-Event Actors** (`13` Live + `4` Standby Queue), **16 x402 v2 Base Mainnet USDC Paywalls** (Lumière PayCheck **Grade A 100/100**), and **118 MCP Tools** (`1 Free probe_inventory + 16 Primary Stream Tools + 101 Specialized Verb Tools`).
+> **Zero-PII Business-to-Agent (B2A) Structured Data & Deterministic Calculation Infrastructure** — **16 Commercial Data Streams**, **17 Apify Store Pay-Per-Event Actors** (`13` Live + `4` Standby Queue), **16 x402 v2 Base Mainnet USDC Paywalls** (Lumière PayCheck **16/16 Grade A 100/100**), and **118 MCP Tools** (`1 Free probe_inventory + 16 Primary Stream Tools + 101 Specialized Verb Tools`).
+
+![STRATA × TrashPan Interactive Storefront](./docs/storefront-preview.png)
+
+### Verified Global Registry & Audit Links
+- **Official MCP Registry (`v2.4.0`)**: `com.andque/strata-b2a-mcp` & `com.andque/agent-data` ([Search on registry.modelcontextprotocol.io](https://registry.modelcontextprotocol.io/v0/servers?search=andque))
+- **MCP.so (Verified & Featured)**: [mcp.so/servers/strata-trashpan-b2a-clean-data-mcp-server](https://mcp.so/servers/strata-trashpan-b2a-clean-data-mcp-server)
+- **x402scan (`32/32` OpenAPI 3.1 Routes Indexed)**: [x402scan.com/server/85a5783a-7282-4684-b5e7-d2b524c4e7bc](https://www.x402scan.com/server/85a5783a-7282-4684-b5e7-d2b524c4e7bc)
+- **Lumière PayCheck (`16/16` Grade A `100/100` Paid-Test Verified)**: [lumierepaycheck.org/sellers/trashpan-recycle-worker.moremasatoshi.workers.dev](https://lumierepaycheck.org/sellers/trashpan-recycle-worker.moremasatoshi.workers.dev)
+- **Interactive Web Storefront**: [https://strata.andque.com](https://strata.andque.com) | **OpenAPI 3.1 Discovery**: [https://strata.andque.com/openapi.json](https://strata.andque.com/openapi.json)
 
 ---
 
