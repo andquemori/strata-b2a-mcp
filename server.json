@@ -1,22 +1,22 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-10-17/server.schema.json",
   "name": "io.github.andquemori/strata-b2a-mcp",
-  "title": "STRATA & TrashPan B2A Public Data, KYB, TCG Market & Golf EV MCP Server",
-  "description": "Zero-PII B2A 2-Story Remote MCP Server (15 streams, 52 tools). Free 1st Floor probe_inventory & tools/list ($0, no API key); 2nd Floor via X-MCP-API-Key, x402 Base USDC, or Apify Store PPE.",
-  "version": "2.3.0",
+  "title": "STRATA & TrashPan B2A Public Data, JP Corporate KYB (5,000 Hot-Index), TCG & Golf EV MCP",
+  "description": "Zero-PII B2A 2-Story Remote MCP Server (16 streams, 118 tools, 5,000 verified JP corporations). Free 1st Floor probe_inventory & tools/list ($0, no API key); 2nd Floor via X-MCP-API-Key, x402 v2 Base USDC, or Apify Store PPE.",
+  "version": "2.4.0",
   "repository": {
     "url": "https://github.com/andquemori/strata-b2a-mcp",
     "source": "github"
   },
-  "websiteUrl": "https://andque.com",
+  "websiteUrl": "https://strata.andque.com",
   "remotes": [
     {
       "type": "streamable-http",
-      "url": "https://trashpan-recycle-worker.moremasatoshi.workers.dev/mcp",
+      "url": "https://strata.andque.com/mcp",
       "headers": [
         {
           "name": "X-MCP-API-Key",
-          "description": "Optional for 1st Floor (tools/list and probe_inventory are 100% free without key). Required only for 2nd Floor paid full data execution.",
+          "description": "Optional for 1st Floor (tools/list of 118 tools and probe_inventory are 100% free without key). Required only for 2nd Floor paid full data execution.",
           "isRequired": false,
           "isSecret": true
         }
@@ -27,14 +27,14 @@
     {
       "registryType": "npm",
       "identifier": "@andq/strata-b2a-mcp",
-      "version": "2.1.0",
+      "version": "2.4.0",
       "transport": {
         "type": "stdio"
       },
       "environmentVariables": [
         {
           "name": "MCP_API_KEY",
-          "description": "Optional API key for 2nd Floor full data calls. Leave empty to use Free 1st Floor tools/list and probe_inventory.",
+          "description": "Optional API key for 2nd Floor full data calls. Leave empty to use Free 1st Floor tools/list (118 tools) and probe_inventory.",
           "isRequired": false,
           "isSecret": true
         }

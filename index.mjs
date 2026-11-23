@@ -4,17 +4,18 @@
  * STRATA & TrashPan — 2-Story B2A Remote MCP Zero-Dependency Stdio Bridge
  * ============================================================================
  * Operated by andQ Inc. / 株式会社andQ (Corporate Number: 6010001269339)
- * Remote Streamable HTTP Endpoint:
- *   https://trashpan-recycle-worker.moremasatoshi.workers.dev/mcp
- * Discovery Manifest:
- *   https://trashpan-recycle-worker.moremasatoshi.workers.dev/.well-known/mcp.json
+ * Primary Remote Streamable HTTP Endpoint:
+ *   https://strata.andque.com/mcp
+ * Discovery Manifests:
+ *   https://strata.andque.com/.well-known/mcp.json
+ *   https://strata.andque.com/.well-known/x402.json
  *
  * - 1st Floor (FREE / No API Key Required):
- *     `initialize`, `notifications/initialized`, `ping`, `tools/list` (49 tools),
+ *     `initialize`, `notifications/initialized`, `ping`, `tools/list` (118 tools),
  *     and `tools/call` with `name: "probe_inventory"` ($0.000).
  * - 2nd Floor (Full Structured Data Execution):
  *     Pass `MCP_API_KEY` env var (forwarded as `X-MCP-API-Key`), or use instant
- *     x402 Base Mainnet USDC paywall / Apify Store Pay-Per-Event links returned
+ *     x402 v2 Base Mainnet USDC paywall / Apify Store Pay-Per-Event links returned
  *     in the response.
  * ============================================================================
  */
@@ -23,7 +24,7 @@ import readline from 'node:readline';
 
 const REMOTE_MCP_URL = (
   process.env.STRATA_MCP_URL ||
-  'https://trashpan-recycle-worker.moremasatoshi.workers.dev/mcp'
+  'https://strata.andque.com/mcp'
 ).trim();
 
 const MCP_API_KEY = (
@@ -65,7 +66,7 @@ async function forwardJsonRpcLine(line) {
   const headers = {
     'Content-Type': 'application/json',
     'Accept': 'application/json',
-    'User-Agent': 'Strata-B2A-MCP-Stdio-Bridge/2.1.0 (+https://andque.com)',
+    'User-Agent': 'Strata-B2A-MCP-Stdio-Bridge/2.4.0 (+https://strata.andque.com)',
   };
   if (MCP_API_KEY) {
     headers['X-MCP-API-Key'] = MCP_API_KEY;

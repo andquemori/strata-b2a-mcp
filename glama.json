@@ -4,9 +4,9 @@
     "andquemori"
   ],
   "name": "andque-strata-b2a-mcp",
-  "description": "Zero-PII B2A (Business-to-Agent) 2-Story Remote MCP Server operated by andQ Inc. (Corporate Number: 6010001269339). Free 1st Floor ($0, no API key) for tools/list (52 tools across 15 streams) and probe_inventory; Paid 2nd Floor for Japanese Corporate KYB, Court Foreclosures, Giteki/Gov Procurement, MHLW Hospitals, EDINET/JGB, Patent/SaaS B2A Delta, Real Economy/PLATEAU 3D, Area POI/Seismic Hazard, OLIPAI TCG Market Floor, Academic R&D/PubMed, Domain B2A Readiness, ATS Jobs, Google Trends, and 157,480-point ANSR Golf EV, Strokes Gained, ShotCircle Dispersion & 2,005 Golf Courses (4,647 courses / 41,825 holes) GPS GamePlan Engine.",
-  "remoteUrl": "https://trashpan-recycle-worker.moremasatoshi.workers.dev/mcp",
-  "discoveryUrl": "https://trashpan-recycle-worker.moremasatoshi.workers.dev/.well-known/mcp.json",
-  "x402DiscoveryUrl": "https://trashpan-recycle-worker.moremasatoshi.workers.dev/.well-known/x402.json",
+  "description": "Zero-PII B2A (Business-to-Agent) 2-Story Remote MCP Server operated by andQ Inc. (Corporate Number: 6010001269339). Free 1st Floor ($0, no API key) for tools/list (118 tools across 16 commercial streams) and probe_inventory; Paid 2nd Floor for JP Corporate Substance & Counterparty Reputation (5,000 Verified Hot-Index Corporations / 5.8M Registry Scope / Batch up to 1,000 corps), NTA KYB & Invoice Delta, Court Foreclosures, Giteki/Gov Procurement, MHLW 7,715 Hospitals, EDINET/JGB, Patent/SaaS B2A Delta, Real Economy/PLATEAU 3D, Area POI/Seismic Hazard, OLIPAI TCG Market Floor, Academic R&D/PubMed, Domain B2A Readiness, ATS Jobs, Google Trends, and 157,480-point ANSR Golf EV, Strokes Gained, ShotCircle Dispersion & 2,005 Golf Courses (4,647 courses / 41,825 holes) GPS GamePlan Engine.",
+  "remoteUrl": "https://strata.andque.com/mcp",
+  "discoveryUrl": "https://strata.andque.com/.well-known/mcp.json",
+  "x402DiscoveryUrl": "https://strata.andque.com/.well-known/x402.json",
   "apifyStoreUrl": "https://apify.com/andque"
 }

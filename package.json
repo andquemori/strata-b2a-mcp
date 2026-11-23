@@ -1,7 +1,7 @@
 {
   "name": "@andq/strata-b2a-mcp",
-  "version": "2.2.0",
-  "description": "Zero-PII B2A (Business-to-Agent) 2-Story Remote MCP Server & Zero-Dependency Stdio Bridge (15 Commercial Data Streams, 50 MCP Tools, Free probe_inventory, x402 Base Mainnet USDC & Apify Store PPE).",
+  "version": "2.4.0",
+  "description": "Zero-PII B2A (Business-to-Agent) 2-Story Remote MCP Server & Zero-Dependency Stdio Bridge (16 Commercial Data Streams, 118 MCP Tools, 5,000 Verified JP Corporations Hot-Index, Free probe_inventory, x402 v2 Base Mainnet USDC & Apify Store PPE).",
   "type": "module",
   "main": "index.mjs",
   "bin": {
@@ -14,7 +14,7 @@
     "type": "git",
     "url": "https://github.com/andquemori/strata-b2a-mcp.git"
   },
-  "homepage": "https://andque.com",
+  "homepage": "https://strata.andque.com",
   "author": "andQ Inc. (Corporate Number: 6010001269339) <m.m@andque.com>",
   "license": "MIT",
   "keywords": [
@@ -25,6 +25,7 @@
     "apify",
     "japan",
     "kyb",
+    "counterparty-risk",
     "edinet",
     "patent",
     "tcg",
