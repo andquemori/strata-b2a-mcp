@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-10-17/server.schema.json",
   "name": "io.github.andquemori/strata-b2a-mcp",
   "title": "STRATA & TrashPan B2A Public Data, JP Corporate KYB (5,000 Hot-Index), TCG & Golf EV MCP",
-  "description": "Zero-PII B2A Remote MCP: 16 streams, 118 tools, 5,000 JP corps KYB, TCG, Golf EV, x402 & Free probe",
-  "version": "2.4.0",
+  "description": "Zero-PII B2A Remote MCP: 16 streams, 122 tools, 5,000 JP corps KYB, TCG, Golf EV, x402 & Free probe",
+  "version": "2.5.0",
   "repository": {
     "url": "https://github.com/andquemori/strata-b2a-mcp",
     "source": "github"
@@ -16,7 +16,7 @@
       "headers": [
         {
           "name": "X-MCP-API-Key",
-          "description": "Optional for 1st Floor (tools/list of 118 tools and probe_inventory are 100% free without key). Required only for 2nd Floor paid full data execution.",
+          "description": "Optional for 1st Floor (tools/list of 122 tools and probe_inventory are 100% free without key). Required only for 2nd Floor paid full data execution.",
           "isRequired": false,
           "isSecret": true
         }
@@ -27,14 +27,14 @@
     {
       "registryType": "npm",
       "identifier": "@andq/strata-b2a-mcp",
-      "version": "2.4.0",
+      "version": "2.5.0",
       "transport": {
         "type": "stdio"
       },
       "environmentVariables": [
         {
           "name": "MCP_API_KEY",
-          "description": "Optional API key for 2nd Floor full data calls. Leave empty to use Free 1st Floor tools/list (118 tools) and probe_inventory.",
+          "description": "Optional API key for 2nd Floor full data calls. Leave empty to use Free 1st Floor tools/list (122 tools) and probe_inventory.",
           "isRequired": false,
           "isSecret": true
         }

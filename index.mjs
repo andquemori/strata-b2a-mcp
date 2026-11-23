@@ -11,7 +11,7 @@
  *   https://strata.andque.com/.well-known/x402.json
  *
  * - 1st Floor (FREE / No API Key Required):
- *     `initialize`, `notifications/initialized`, `ping`, `tools/list` (118 tools),
+ *     `initialize`, `notifications/initialized`, `ping`, `tools/list` (122 tools),
  *     and `tools/call` with `name: "probe_inventory"` ($0.000).
  * - 2nd Floor (Full Structured Data Execution):
  *     Pass `MCP_API_KEY` env var (forwarded as `X-MCP-API-Key`), or use instant
@@ -66,7 +66,7 @@ async function forwardJsonRpcLine(line) {
   const headers = {
     'Content-Type': 'application/json',
     'Accept': 'application/json',
-    'User-Agent': 'Strata-B2A-MCP-Stdio-Bridge/2.4.0 (+https://strata.andque.com)',
+    'User-Agent': 'Strata-B2A-MCP-Stdio-Bridge/2.5.0 (+https://strata.andque.com)',
   };
   if (MCP_API_KEY) {
     headers['X-MCP-API-Key'] = MCP_API_KEY;
