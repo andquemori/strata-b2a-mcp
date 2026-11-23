@@ -2,15 +2,15 @@
 
 > **Operated by andQ Inc. / 株式会社andQ** (Corporate Number: `6010001269339` | Web: [https://andque.com](https://andque.com) | B2A Portal: [https://strata.andque.com](https://strata.andque.com) | Contact: `m.m@andque.com`)
 >
-> **Zero-PII Business-to-Agent (B2A) Structured Data & Deterministic Calculation Infrastructure** — **16 Commercial Data Streams**, **17 Apify Store Pay-Per-Event Actors** (`13` Live + `4` Standby Queue), **16 x402 v2 Base Mainnet USDC Paywalls** (Lumière PayCheck **16/16 Grade A 100/100**), and **122 MCP Tools** (`1 Free probe_inventory + 16 Primary Stream Tools + 105 Specialized Verb Tools`).
+> **Zero-PII Business-to-Agent (B2A) Structured Data & Deterministic Calculation Infrastructure** — **16 Commercial Data Streams**, **17 Apify Store Pay-Per-Event Actors** (`13` Live + `4` Standby Queue), **16 x402 v2 Base Mainnet USDC Paywalls** (Lumière PayCheck **16/16 Paid-Test Passed & Proceed**), and **126 MCP Tools** (`1 Free probe_inventory + 16 Primary Stream Tools + 109 Specialized Verb Tools`).
 
 ![STRATA × TrashPan Interactive Storefront](./docs/storefront-preview.png)
 
 ### Verified Global Registry & Audit Links
-- **Official MCP Registry (`v2.5.0`)**: `com.andque/strata-b2a-mcp` & `com.andque/agent-data` ([Search on registry.modelcontextprotocol.io](https://registry.modelcontextprotocol.io/v0/servers?search=andque))
+- **Official MCP Registry (`v2.6.0`)**: `com.andque/strata-b2a-mcp` & `com.andque/agent-data` ([Search on registry.modelcontextprotocol.io](https://registry.modelcontextprotocol.io/v0/servers?search=andque))
 - **MCP.so (Verified & Featured)**: [mcp.so/servers/strata-trashpan-b2a-clean-data-mcp-server](https://mcp.so/servers/strata-trashpan-b2a-clean-data-mcp-server)
 - **x402scan (`32/32` OpenAPI 3.1 Routes Indexed)**: [x402scan.com/server/85a5783a-7282-4684-b5e7-d2b524c4e7bc](https://www.x402scan.com/server/85a5783a-7282-4684-b5e7-d2b524c4e7bc)
-- **Lumière PayCheck (`16/16` Grade A `100/100` Paid-Test Verified)**: [lumierepaycheck.org/sellers/trashpan-recycle-worker.moremasatoshi.workers.dev](https://lumierepaycheck.org/sellers/trashpan-recycle-worker.moremasatoshi.workers.dev)
+- **Lumière PayCheck (`16/16` Paid-Test Verified & `Proceed`)**: [lumierepaycheck.org/sellers/strata.andque.com](https://lumierepaycheck.org/sellers/strata.andque.com) (7d Live Uptime) | [Worker `16/16` Grade A](https://lumierepaycheck.org/sellers/trashpan-recycle-worker.moremasatoshi.workers.dev)
 - **Interactive Web Storefront**: [https://strata.andque.com](https://strata.andque.com) | **OpenAPI 3.1 Discovery**: [https://strata.andque.com/openapi.json](https://strata.andque.com/openapi.json)
 
 ---
@@ -34,11 +34,11 @@
 ### 1st Floor (100% FREE / `$0.000` / No API Key Required)
 Any MCP client (Claude Desktop, Cursor, Claude Code, Windsurf, Smithery, Glama, PulseMCP) can connect immediately **without an API key**:
 - `initialize` & `notifications/initialized`
-- `tools/list` (Lists all **122 MCP tools**)
+- `tools/list` (Lists all **126 MCP tools**)
 - `tools/call` -> **`probe_inventory`** (`$0.000`): Checks whether a target domain, company ATS board, trend keyword, Japanese corporate KYB / Counterparty Substance record (**5,000 Verified Hot-Index Corporations** in `gen_25912da412d1e39c`, `5.8M` registry architecture scope), court foreclosure, POI location, OLIPAI TCG SKU, academic R&D paper, or ANSR Golf EV/SG/Course profile matrix is in stock, returning its **SHA-256 fingerprint**, **24-hour freshness**, and instant purchase links. Unindexed queries are automatically queued into **AIGREED** for auto-restock.
 
 ### 2nd Floor (Full Structured Data Execution)
-When calling any of the 121 paid data/calculation tools:
+When calling any of the 125 paid data/calculation tools:
 1. **With `X-MCP-API-Key` (`MCP_API_KEY`)**: Returns full normalized JSON immediately (with Sigstore Rekor / TAPP transparency seal provenance).
 2. **Without `X-MCP-API-Key`**: Returns a structured self-resolution guide pointing the AI agent to:
    - Free `probe_inventory` check (`$0.000`)
@@ -108,16 +108,16 @@ claude mcp add --transport http strata-b2a https://strata.andque.com/mcp
 | **14** | `jp-places-poi-geospatial-intel`<br>(`jp_places_poi_geospatial_intel`) | `$0.005` | `andque/jp-places-poi-geospatial-intel` *(Queued)* | 100% Legal Japan Area POI, GSI Geocoding & 1m Laser Elevation, NIED J-SHIS Seismic Hazard, MHLW Hospitals & PLATEAU 3D |
 | **15** | `olipai-jp-tcg-collectibles-market`<br>(`olipai_jp_tcg_collectibles_market`) | `$0.006` | `andque/olipai-jp-tcg-collectibles-market` *(Queued)* | OLIPAI Japan Trading Card Game (Pokemon / JP Collector Foil MTG / Yu-Gi-Oh!) Secondary Market Floor Price & Cross-Venue Spread |
 | **16** | `jp-academic-rnd-patent-citation-feed`<br>(`jp_academic_rnd_patent_citation_feed`) | `$0.006` | `andque/jp-academic-rnd-patent-citation-feed` *(Queued)* | Japan Academic R&D High-Citation Papers (OpenAlex CC0), Biomedical/AI Articles (NIH PubMed) & JPO Patent Citations |
-| **17** | **`jp-entity-reputation`**<br>(`jp_entity_reputation`) | **`$0.006`** | `andque/jp-entity-reputation` *(Queued)* | **Japan Corporate Substance, GLEIF LEI, OFAC Sanctions & Counterparty Reputation Intelligence (`5,000 Verified Hot-Index Corporations` + `4,357 GLEIF JP LEI Corporations` + `26,338 OFAC Clean Organizational Entities, AKAs & Crypto Wallets` + `Kanpo Corporate Events` / Batch up to 1,000 corps at `$0.006` flat)** |
+| **17** | **`jp-entity-reputation`**<br>(`jp_entity_reputation`) | **`$0.006`** | `andque/jp-entity-reputation` *(Queued)* | **Japan Corporate Substance, GLEIF LEI, OFAC Sanctions & Counterparty Reputation Intelligence (`5,000 Verified Hot-Index Corporations [100% NTA Invoice Verified]` + `16,247 Unified Gov Qualification A–D Grade Corporations` + `3,061 EDINET v2 Going Concern & Amendment Filings` + `4,357 GLEIF JP LEI Corporations` + `26,338 OFAC Clean Organizational Entities, AKAs & Crypto Wallets` + `Kanpo Corporate Events` / Batch up to 1,000 corps at `$0.006` flat)** |
 
 ---
 
-## All 122 MCP Tools Grouped by Stream
+## All 126 MCP Tools Grouped by Stream
 
-| Stream ID | Count | MCP Tool Names (`1 Free + 16 Primary + 105 Verb Tools`) |
+| Stream ID | Count | MCP Tool Names (`1 Free + 16 Primary + 109 Verb Tools`) |
 | :--- | :---: | :--- |
 | **`probe-inventory`** *(FREE `$0`)* | **1** | `probe_inventory` |
-| **`jp-entity-reputation`** | **17** | `jp_entity_reputation`, `verify_jp_corporate_substance`, `filter_virtual_office_entities`, `screen_sales_list_noise`, `verify_jp_counterparty_kyb`, `verify_counterparty_batch`, `check_jp_phone_domain_parry`, `screen_tokyo_clean_b2b_corporations`, `screen_osaka_clean_b2b_corporations`, `lookup_jp_corp_by_official_domain`, `filter_jp_corps_with_gov_procurement_track_record`, `check_jp_corp_name_and_address_churn_history`, `audit_jp_vendor_onboarding_compliance`, `lookup_jp_gleif_lei_and_english_name`, `filter_jp_lapsed_lei_corporations`, `screen_ofac_crypto_wallet_sanctions`, `screen_ofac_counterparty_entities` |
+| **`jp-entity-reputation`** | **21** | `jp_entity_reputation`, `verify_jp_corporate_substance`, `filter_virtual_office_entities`, `screen_sales_list_noise`, `verify_jp_counterparty_kyb`, `verify_counterparty_batch`, `check_jp_phone_domain_parry`, `screen_tokyo_clean_b2b_corporations`, `screen_osaka_clean_b2b_corporations`, `lookup_jp_corp_by_official_domain`, `filter_jp_corps_with_gov_procurement_track_record`, `check_jp_corp_name_and_address_churn_history`, `audit_jp_vendor_onboarding_compliance`, `lookup_jp_gleif_lei_and_english_name`, `filter_jp_lapsed_lei_corporations`, `screen_ofac_crypto_wallet_sanctions`, `screen_ofac_counterparty_entities`, `lookup_jp_gov_unified_qualification_rank`, `filter_jp_grade_a_gov_qualified_corporations`, `screen_jp_edinet_going_concern_corporations`, `diff_jp_edinet_amended_securities_reports` |
 | **`ansr-golf-ev-engine`** | **13** | `ansr_golf_ev_engine`, `calculate_golf_shot_ev`, `calculate_golf_strokes_gained`, `calculate_golf_target_ev_distance`, `calculate_golf_shot_dispersion`, `search_jp_golf_courses`, `calculate_golf_hole_gameplan`, `compare_golf_ev_across_all_lies`, `calculate_golf_putting_expected_strokes`, `calculate_golf_ob_and_penalty_strokes_gained`, `calculate_golf_tee_shot_dispersion_ellipse`, `calculate_golf_approach_shot_dispersion_ellipse`, `search_jp_golf_courses_by_prefecture` |
 | **`jp-company-kyb-registry-delta`** | **9** | `jp_company_kyb_registry_delta`, `check_jp_invoice_status`, `search_jp_new_incorporations`, `check_jp_company_recalls_and_violations`, `search_jp_consumer_product_recalls`, `check_jp_invoice_validity_at_date`, `check_jp_labor_standards_referral_records`, `check_jp_fsa_unregistered_operator_warnings`, `track_jp_corporate_relocations_and_closures` |
 | **`domain-lookup`** | **8** | `domain_lookup`, `check_domain_b2a_readiness_and_dmarc`, `check_domain_dns_rdap_and_tech_stack`, `inspect_domain_llms_txt_and_agents_md`, `audit_domain_spf_dmarc_deliverability`, `inspect_domain_robots_ai_bot_policy`, `lookup_domain_rdap_expiration_and_registrar`, `measure_domain_ttfb_and_cdn_stack` |
