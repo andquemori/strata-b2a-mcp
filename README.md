@@ -38,7 +38,7 @@ Any MCP client (Claude Desktop, Cursor, Claude Code, Windsurf, Smithery, Glama, 
 - `tools/call` -> **`probe_inventory`** (`$0.000`): Checks whether a target domain, company ATS board, trend keyword, Japanese corporate KYB / Counterparty Substance record (**5,000 Verified Hot-Index Corporations** in `gen_25912da412d1e39c`, `5.8M` registry architecture scope), court foreclosure, POI location, OLIPAI TCG SKU, academic R&D paper, or ANSR Golf EV/SG/Course profile matrix is in stock, returning its **SHA-256 fingerprint**, **24-hour freshness**, and instant purchase links. Unindexed queries are automatically queued into **AIGREED** for auto-restock.
 
 ### 2nd Floor (Full Structured Data Execution)
-When calling any of the 117 data/calculation tools:
+When calling any of the 121 paid data/calculation tools:
 1. **With `X-MCP-API-Key` (`MCP_API_KEY`)**: Returns full normalized JSON immediately (with Sigstore Rekor / TAPP transparency seal provenance).
 2. **Without `X-MCP-API-Key`**: Returns a structured self-resolution guide pointing the AI agent to:
    - Free `probe_inventory` check (`$0.000`)
@@ -108,7 +108,7 @@ claude mcp add --transport http strata-b2a https://strata.andque.com/mcp
 | **14** | `jp-places-poi-geospatial-intel`<br>(`jp_places_poi_geospatial_intel`) | `$0.005` | `andque/jp-places-poi-geospatial-intel` *(Queued)* | 100% Legal Japan Area POI, GSI Geocoding & 1m Laser Elevation, NIED J-SHIS Seismic Hazard, MHLW Hospitals & PLATEAU 3D |
 | **15** | `olipai-jp-tcg-collectibles-market`<br>(`olipai_jp_tcg_collectibles_market`) | `$0.006` | `andque/olipai-jp-tcg-collectibles-market` *(Queued)* | OLIPAI Japan Trading Card Game (Pokemon / JP Collector Foil MTG / Yu-Gi-Oh!) Secondary Market Floor Price & Cross-Venue Spread |
 | **16** | `jp-academic-rnd-patent-citation-feed`<br>(`jp_academic_rnd_patent_citation_feed`) | `$0.006` | `andque/jp-academic-rnd-patent-citation-feed` *(Queued)* | Japan Academic R&D High-Citation Papers (OpenAlex CC0), Biomedical/AI Articles (NIH PubMed) & JPO Patent Citations |
-| **17** | **`jp-entity-reputation`**<br>(`jp_entity_reputation`) | **`$0.006`** | `andque/jp-entity-reputation` *(Queued)* | **Japan Corporate Substance, GLEIF LEI, OFAC Sanctions & Counterparty Reputation Intelligence (`5,000 Verified Hot-Index Corporations` + `4,358 GLEIF JP LEI Corporations` + `13,112 OFAC Clean Entity/Crypto Wallet Sanctions` + `Kanpo Corporate Events` / Batch up to 1,000 corps at `$0.006` flat)** |
+| **17** | **`jp-entity-reputation`**<br>(`jp_entity_reputation`) | **`$0.006`** | `andque/jp-entity-reputation` *(Queued)* | **Japan Corporate Substance, GLEIF LEI, OFAC Sanctions & Counterparty Reputation Intelligence (`5,000 Verified Hot-Index Corporations` + `4,357 GLEIF JP LEI Corporations` + `26,338 OFAC Clean Organizational Entities, AKAs & Crypto Wallets` + `Kanpo Corporate Events` / Batch up to 1,000 corps at `$0.006` flat)** |
 
 ---
 
