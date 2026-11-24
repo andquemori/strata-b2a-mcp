@@ -1,7 +1,7 @@
 {
   "name": "@andq/strata-b2a-mcp",
-  "version": "2.8.0",
-  "description": "Zero-PII B2A (Business-to-Agent) 2-Story Remote MCP Server & Zero-Dependency Stdio Bridge (v2.8.0: 16 Commercial Data Streams, 126 MCP Tools, 5,000 Verified JP Corporations [100% NTA Invoice], 62,630 Gov Qualifications [Gov Standard Terms v2.0; 0 >500-hit slices remaining, 13 non-JCN truncated pages], 3,061 EDINET Filings, 4,357 GLEIF LEIs, 26,364 OFAC Records, End-to-End Sigstore Rekor Proof, x402 Base USDC & Apify PPE).",
+  "version": "2.8.1",
+  "description": "Zero-PII B2A (Business-to-Agent) 2-Story Remote MCP Server & Zero-Dependency Stdio Bridge (16 Commercial Data Streams, Canonical 18 MCP Tools + 126 Backward-Compatible Legacy Aliases = 144 Callable Tools, 5,858,407 JP Corporations across 10,000 R2 Shards, 44,227 Corporate Domains, 62,630 Gov Qualifications, 3,061 EDINET Filings, 4,357 GLEIF LEIs, 26,364 OFAC Records, End-to-End Sigstore Rekor Proof, x402 Base USDC & Apify PPE).",
   "type": "module",
   "main": "index.mjs",
   "bin": {

@@ -2,12 +2,13 @@
 
 > **Operated by andQ Inc. / 株式会社andQ** (Corporate Number: `6010001269339` | Web: [https://andque.com](https://andque.com) | B2A Portal: [https://strata.andque.com](https://strata.andque.com) | Contact: `m.m@andque.com`)
 >
-> **Zero-PII Business-to-Agent (B2A) Structured Data & Deterministic Calculation Infrastructure** — **16 Commercial Data Streams**, **17 Apify Store Pay-Per-Event Actors (`17 / 17` All Live Public)**, **16 x402 v2 Base Mainnet USDC Paywalls** (Lumière PayCheck **16/16 Paid-Test Passed & Proceed**), **5,858,407 Japanese Corporations across All 10,000 R2 Shards (`gen_37500fcdaacecf05`)**, **44,227 Corporate Domains (`107,126` B2B Reverse-Lookup D1 Index) & 4,551 Live B2A Readiness Tier Measured Corporations**, and **126 MCP Tools** (`1 Free probe_inventory + 16 Primary Stream Tools + 109 Specialized Verb Tools`).
+> **Zero-PII Business-to-Agent (B2A) Structured Data & Deterministic Calculation Infrastructure** — **16 Commercial Data Streams**, **17 Apify Store Pay-Per-Event Actors (`17 / 17` All Live Public)**, **16 x402 v2 Base Mainnet USDC Paywalls** (Lumière PayCheck **16/16 Paid-Test Passed & Proceed**), **5,858,407 Japanese Corporations across All 10,000 R2 Shards (`gen_37500fcdaacecf05`)**, **44,227 Corporate Domains (`107,126` B2B Reverse-Lookup D1 Index) & 4,551 Live B2A Readiness Tier Measured Corporations**, and a **Glama TDQS Grade-A Canonical 18-Tool Surface** (`2 Free Introspection/Probe Tools + 16 Canonical query_* Tools`, plus **100% Backward Compatibility for all 126 Legacy Tool Aliases = 144 Callable Tools**).
 
 ![STRATA × TrashPan Interactive Storefront](./docs/storefront-preview.png)
 
 ### Verified Global Registry & Audit Links
-- **Official MCP Registry (`v2.8.0`)**: `com.andque/strata-b2a-mcp` & `com.andque/agent-data` ([Search on registry.modelcontextprotocol.io](https://registry.modelcontextprotocol.io/v0/servers?search=andque))
+- **Official MCP Registry (`v2.8.1`)**: `com.andque/strata-b2a-mcp` & `com.andque/agent-data` ([Search on registry.modelcontextprotocol.io](https://registry.modelcontextprotocol.io/v0/servers?search=andque))
+- **Glama (Verified Owner Claim)**: [glama.ai/mcp/connectors/com.andque.strata/strata-and-trash-pan-b2a-clean-data-mcp-server](https://glama.ai/mcp/connectors/com.andque.strata/strata-and-trash-pan-b2a-clean-data-mcp-server)
 - **MCP.so (Verified & Featured)**: [mcp.so/servers/strata-trashpan-b2a-clean-data-mcp-server](https://mcp.so/servers/strata-trashpan-b2a-clean-data-mcp-server)
 - **x402scan (`32/32` OpenAPI 3.1 Routes Indexed)**: [x402scan.com/server/85a5783a-7282-4684-b5e7-d2b524c4e7bc](https://www.x402scan.com/server/85a5783a-7282-4684-b5e7-d2b524c4e7bc)
 - **Lumière PayCheck (`16/16` Paid-Test Verified & `Proceed`)**: [lumierepaycheck.org/sellers/strata.andque.com](https://lumierepaycheck.org/sellers/strata.andque.com) (7d Live Uptime) | [Worker `16/16` Grade A](https://lumierepaycheck.org/sellers/trashpan-recycle-worker.moremasatoshi.workers.dev)
@@ -25,23 +26,25 @@
 
 ## Architecture: 2-Story Remote MCP (`streamable-http` & `stdio` Bridge)
 
-- **Primary Remote Streamable HTTP Endpoint**: `https://strata.andque.com/mcp`
+- **Primary Remote Streamable HTTP Endpoint (Canonical 18 Tools)**: `https://strata.andque.com/mcp`
+- **Full Alias Surface (All 144 Callable Tools = 18 Canonical + 126 Legacy Aliases)**: `https://strata.andque.com/mcp?profile=full`
 - **MCP Discovery Manifest**: `https://strata.andque.com/.well-known/mcp.json`
 - **x402 v2 Discovery Manifest**: `https://strata.andque.com/.well-known/x402.json`
 - **AI Guide (`/llms.txt`)**: `https://strata.andque.com/llms.txt`
 - **Legacy Parallel Mirror**: `https://trashpan-recycle-worker.moremasatoshi.workers.dev/mcp`
 
 ### 1st Floor (100% FREE / `$0.000` / No API Key Required)
-Any MCP client (Claude Desktop, Cursor, Claude Code, Windsurf, Smithery, Glama, PulseMCP) can connect immediately **without an API key**:
+Any MCP client (Claude Desktop, Cursor, Claude Code, Windsurf, Glama, PulseMCP) can connect immediately **without an API key**:
 - `initialize` & `notifications/initialized`
-- `tools/list` (Lists all **126 MCP tools**)
-- `tools/call` -> **`probe_inventory`** (`$0.000`): Checks whether a target domain, company ATS board, trend keyword, Japanese corporate KYB / Counterparty Substance record (**5,858,407 Japanese Corporations across All 10,000 R2 Shards `0000`–`9999`** + **5,000 Verified D1 Hot-Index Corporations** synchronized on `gen_37500fcdaacecf05`), court foreclosure, POI location, OLIPAI TCG SKU, academic R&D paper, or ANSR Golf EV/SG/Course profile matrix is in stock, returning its **SHA-256 fingerprint**, **24-hour freshness**, and instant purchase links. Unindexed queries are automatically queued into **AIGREED** for auto-restock.
+- `tools/list`: Exposes the **18 Canonical Tools** (`list_b2a_data_streams`, `probe_stream_inventory`, and 16 `query_*` stream tools, strictly following `^(list|probe|query)_[a-z0-9_]+$` with nationwide 47-prefecture `"01"`..`"47"` coverage and explicit disambiguation notes). Pass `?profile=full` or `params.includeAliases: true` to list all **144 callable tools**.
+- **`list_b2a_data_streams`** (`$0.000`): Introspects all 16 B2A data streams, dataset coverage counts, supported `mode` enums, USD pricing, `SOURCE_RIGHTS_REGISTRY` licenses, and canonical `query_*` mappings.
+- **`probe_stream_inventory`** (`$0.000`; legacy alias `probe_inventory` also accepted): Checks whether a target 13-digit JCN, corporate domain, LEI, OFAC wallet, ATS job board, trend keyword, or ANSR Golf course/EV matrix is in stock, returning its **SHA-256 fingerprint** (`currentHash`), **24-hour freshness**, and TAPP Rekor seal status before calling a paid `query_*` tool.
 
-### 2nd Floor (Full Structured Data Execution)
-When calling any of the 125 paid data/calculation tools:
+### 2nd Floor (Full Structured Data Execution — 16 Canonical `query_*` Tools + 125 Legacy Aliases)
+When calling any paid `query_*` tool (or any of the 125 backward-compatible legacy aliases):
 1. **With `X-MCP-API-Key` (`MCP_API_KEY`)**: Returns full normalized JSON immediately (with Sigstore Rekor / TAPP transparency seal provenance).
 2. **Without `X-MCP-API-Key`**: Returns a structured self-resolution guide pointing the AI agent to:
-   - Free `probe_inventory` check (`$0.000`)
+   - Free `probe_stream_inventory` check (`$0.000`)
    - Instant **x402 v2 Base Mainnet USDC** paywall URL (`$0.004–$0.008 USDC`, settle-on-success only, wallet `0x0539a9eF29D47Ca13B8604BA2B4970E032c7efEC`)
    - Instant **Apify Store Pay-Per-Event** Actor URL (`https://apify.com/andque`)
 
@@ -88,51 +91,34 @@ claude mcp add --transport http strata-b2a https://strata.andque.com/mcp
 
 ---
 
-## All 16 Commercial B2A Streams & 17 Apify Store Actors
+## Canonical 18 MCP Tools (`tools/list` Default Surface)
 
-| # | Stream ID / Primary MCP Tool | x402 USDC | Apify Store Actor (`andque/*`) | Description |
+| # | Canonical Tool Name | Tier / Price | Stream ID | Scope & Nationwide Coverage |
 | :---: | :--- | :---: | :--- | :--- |
-| **1** | `domain-lookup`<br>(`domain_lookup`) | `$0.006` | [`andque/domain-email-stack-lookup`](https://apify.com/andque/domain-email-stack-lookup) | Bulk Domain, DNS (DoH), RDAP, SPF/DMARC Deliverability Score (0-100), HTTP TTFB, Tech Stack & **B2A Readiness Tier (`2026-11-21.v2`, 0-3 stars)** |
-| **2** | `ats-jobs`<br>(`ats_jobs`) | `$0.006` | [`andque/ats-jobs-delta-feed`](https://apify.com/andque/ats-jobs-delta-feed) | Multi-ATS (Greenhouse / Lever / Ashby / Japanese Tech Career Boards) Normalized Job Postings & SHA-256 Daily Delta Feed |
-| **3** | `google-trends`<br>(`google_trends`) | `$0.004` | [`andque/google-trends-fast-json`](https://apify.com/andque/google-trends-fast-json) | Real-Time Google Autocomplete Related Queries & Google Trends Daily RSS Trending Searches JSON |
-| **4** | `parry-lookup`<br>*(Apify Store Dedicated)* | PPE `$0.004` | [`andque/parry-jp-number-domain-records`](https://apify.com/andque/parry-jp-number-domain-records) | PARRY Japan Phone Number (03/050/0120/0800) & Malicious Domain Quarantine Feed (FSA Warnings + URLhaus IOCs) |
-| **5** | `jp-court-real-estate-auctions`<br>(`jp_court_real_estate_auctions`) | `$0.008` | [`andque/jp-court-real-estate-auctions`](https://apify.com/andque/jp-court-real-estate-auctions) | Supreme Court of Japan BIT Real Estate Foreclosure Opening Results (Winning Bid Multiples) & NIED J-SHIS Seismic Hazard |
-| **6** | `jp-company-kyb-registry-delta`<br>(`jp_company_kyb_registry_delta`) | `$0.006` | [`andque/jp-company-kyb-registry-delta`](https://apify.com/andque/jp-company-kyb-registry-delta) | Japan NTA Corporate Number Daily Diff, Qualified Invoice Expiry, MHLW Labor Violations, FSA Warnings & CAA Product Recalls |
-| **7** | `jp-giteki-tenders-intel`<br>(`jp_giteki_tenders_intel`) | `$0.005` | [`andque/jp-giteki-tenders-intel`](https://apify.com/andque/jp-giteki-tenders-intel) | MIC Japan Radio Law (Giteki) Unreleased Devices, KKJ Public Tenders, Gov Contract Winning Awards & J-Grants Subsidies |
-| **8** | `cisa-kev-threat-ai-status`<br>(`cisa_kev_threat_ai_status`) | `$0.005` | [`andque/cisa-kev-threat-ai-status`](https://apify.com/andque/cisa-kev-threat-ai-status) | U.S. CISA KEV Exploited CVEs, abuse.ch URLhaus Malware IOCs & 7 Core AI/Cloud Platform Real-Time Status |
-| **9** | `jp-healthcare-hospitals-directory`<br>(`jp_healthcare_hospitals_directory`) | `$0.006` | [`andque/jp-healthcare-hospitals-directory`](https://apify.com/andque/jp-healthcare-hospitals-directory) | Japan MHLW National Hospital & Medical Facility Master Directory (Navii Open Data: 7,715 Hospitals, UTF-8-BOM Cleansed) |
-| **10** | `jp-edinet-financial-macro-feed`<br>(`jp_edinet_financial_macro_feed`) | `$0.006` | [`andque/jp-edinet-financial-macro-feed`](https://apify.com/andque/jp-edinet-financial-macro-feed) | FSA EDINET v2 Corporate Securities Filings, Ministry of Finance JGB Yield Curve, FX/BTC Macro & National Diet Laws |
-| **11** | `jp-patent-saas-b2a-delta`<br>(`jp_patent_saas_b2a_delta`) | `$0.006` | [`andque/jp-patent-saas-b2a-delta`](https://apify.com/andque/jp-patent-saas-b2a-delta) | Japan Patent Office (JPO API v1) Examination Progress & 100 Japanese SaaS B2A Readiness / Pricing / ToS SHA-256 Delta |
-| **12** | `jp-real-economy-geospatial-feed`<br>(`jp_real_economy_geospatial_feed`) | `$0.005` | [`andque/jp-real-economy-geospatial-feed`](https://apify.com/andque/jp-real-economy-geospatial-feed) | Tokyo Toyosu/Ota Wholesale Market Daily Prices, MIC e-Stat Construction/Labor, MLIT PLATEAU 3D Cities & G-Space Catalog |
-| **13** | `ansr-golf-ev-engine`<br>(`ansr_golf_ev_engine`) | `$0.005` | [`andque/ansr-golf-strokes-gained-ev-engine`](https://apify.com/andque/ansr-golf-strokes-gained-ev-engine) | **157,480-Point ANSR Golf Expected Value (EV), Single-Shot Strokes Gained (SG), ShotCircle Dispersion & National 2,005 Golf Courses (4,647 Courses / 41,825 Holes) GPS GamePlan Engine** |
-| **14** | `jp-places-poi-geospatial-intel`<br>(`jp_places_poi_geospatial_intel`) | `$0.005` | [`andque/jp-places-poi-geospatial-intel`](https://apify.com/andque/jp-places-poi-geospatial-intel) | 100% Legal Japan Area POI, GSI Geocoding & 1m Laser Elevation, NIED J-SHIS Seismic Hazard, MHLW Hospitals & PLATEAU 3D |
-| **15** | `olipai-jp-tcg-collectibles-market`<br>(`olipai_jp_tcg_collectibles_market`) | `$0.006` | [`andque/olipai-jp-tcg-collectibles-market`](https://apify.com/andque/olipai-jp-tcg-collectibles-market) | OLIPAI Japan Trading Card Game (Pokemon / JP Collector Foil MTG / Yu-Gi-Oh!) Secondary Market Floor Price & Cross-Venue Spread |
-| **16** | `jp-academic-rnd-patent-citation-feed`<br>(`jp_academic_rnd_patent_citation_feed`) | `$0.006` | [`andque/jp-academic-rnd-patent-citation-feed`](https://apify.com/andque/jp-academic-rnd-patent-citation-feed) | Japan Academic R&D High-Citation Papers (OpenAlex CC0), Biomedical/AI Articles (NIH PubMed) & JPO Patent Citations |
-| **17** | **`jp-entity-reputation`**<br>(`jp_entity_reputation`) | **`$0.006`** | [`andque/jp-entity-reputation`](https://apify.com/andque/jp-entity-reputation) | **Japan Corporate Clean Stratigraphy DB, Co-Located Address Density, 44,227-Domain Reverse Lookup, GLEIF LEI, OFAC Sanctions & Counterparty Reputation Intelligence (`5,858,407 Japanese Corporations across All 10,000 R2 Shards [gen_37500fcdaacecf05, 2,475,488 Active NTA Invoices, 164,140 High-Density 50+ Address Corps]` + `107,126 D1 Domain & B2B Directory Index [45,968 Domained Corps / 44,227 Unique Domains -> R2 Shards]` + `4,551 Live B2A Readiness Tier & SPF/DMARC Measured Corporations` + `14,053 Official Gazette (Kanpo) Statutory & Financial Settlement Notices [10,758 JCN-Matched / 1,107 Balance-Sheet Settlements]` + `5,000 Verified D1 Hot-Index Corporations` + `62,630 Unified Gov Qualification A–D Grade Corporations` + `3,061 EDINET v2 Going Concern & Amendment Filings` + `4,357 GLEIF JP LEI Corporations` + `26,364 OFAC Clean Organizational Entities, AKAs & Crypto Wallets` / Batch up to 1,000 corps or domains at `$0.006` flat)** |
+| **1** | `list_b2a_data_streams` | **FREE (`$0`)** | *(Catalog Introspection)* | Lists all 16 streams, schemas, `mode` enums, pricing, and open-data licenses (`category` filter & `includeLegacyAliases`). |
+| **2** | `probe_stream_inventory` | **FREE (`$0`)** | *(Inventory Pre-Check)* | Checks record existence (`recordExists`), 24h freshness, and `sha256` `currentHash` across any stream before paid retrieval (legacy `probe_inventory` also accepted). |
+| **3** | `query_domain_b2a_posture` | `$0.006` | `domain-lookup` | DNS (A/AAAA/NS/MX/TXT), RDAP expiry, SPF/DMARC score (0–100), TTFB, Tech Stack, `/llms.txt` & B2A Readiness Tier (up to 5 domains). |
+| **4** | `query_ats_job_postings` | `$0.006` | `ats-jobs` | Normalized Greenhouse, Lever, and Ashby job postings & daily `sha256` diffs (`new`/`changed`/`removed`/`unchanged`). |
+| **5** | `query_google_search_trends` | `$0.004` | `google-trends` | Real-time Google Autocomplete related queries & Google Trends daily RSS trending searches (`geo`: US/JP, etc.). |
+| **6** | `query_jp_court_foreclosures` | `$0.008` | `jp-court-real-estate-auctions` | Supreme Court BIT real estate foreclosure results & announcements across all 47 prefectures + NIED J-SHIS seismic amplification. |
+| **7** | `query_jp_registry_and_recalls_delta` | `$0.006` | `jp-company-kyb-registry-delta` | Daily NTA corporate incorporations/relocations/closures, invoice revocations, MHLW labor referrals, FSA warnings & CAA recalls. |
+| **8** | `query_jp_giteki_and_procurement_tenders` | `$0.005` | `jp-giteki-tenders-intel` | MIC Giteki wireless/IoT certifications, KKJ public tenders, gov contract awards & J-Grants subsidies across all 47 prefectures. |
+| **9** | `query_cisa_kev_and_cloud_status` | `$0.005` | `cisa-kev-threat-ai-status` | U.S. CISA KEV exploited CVEs (ransomware flag & due dates) & real-time status of 7 core AI/cloud platforms. |
+| **10** | `query_jp_medical_facilities` | `$0.006` | `jp-healthcare-hospitals-directory` | MHLW Navii national directory of 7,715 hospitals & clinics across all 47 prefectures (`prefCode` `"01"`..`"47"`). |
+| **11** | `query_jp_edinet_and_macro_feeds` | `$0.006` | `jp-edinet-financial-macro-feed` | Daily FSA EDINET filings, MOF JGB yield curve (2Y/10Y/30Y) & FX macro rates, and National Diet / e-Gov law deliberations. |
+| **12** | `query_jp_patents_and_saas_pricing_delta` | `$0.006` | `jp-patent-saas-b2a-delta` | JPO API v1 corporate patent applications/examination status & Japanese SaaS/enterprise B2A, pricing & ToS `sha256` diffs. |
+| **13** | `query_jp_wholesale_and_plateau_geospatial` | `$0.005` | `jp-real-economy-geospatial-feed` | Toyosu/Ota wholesale market prices, e-Stat housing/labor stats, MLIT PLATEAU 3D city models, G-Space & solar/seismic feeds. |
+| **14** | `query_ansr_golf_ev_and_course_strategy` | `$0.005` | `ansr-golf-ev-engine` | 157,480-point Golf EV (`ev`), Strokes Gained (`sg`), target EV (`strategy`), ShotCircle (`dispersion`), & 2,005 JP golf courses / 41,812 holes (`course_search`, `hole_strategy`). |
+| **15** | `query_jp_area_poi_and_seismic_hazard` | `$0.005` | `jp-places-poi-geospatial-intel` | Nationwide 47-prefecture station/address/GPS geocoding, GSI elevation, J-SHIS seismic hazard, & Haversine-sorted nearby hospitals/corps/auctions/PLATEAU 3D. |
+| **16** | `query_jp_tcg_collectibles_market` | `$0.006` | `olipai-jp-tcg-collectibles-market` | Pokemon Card, JP Foil MTG & Yu-Gi-Oh! secondary-market floor prices (JPY/USD/EUR), cross-venue spreads, 7d/30d deltas & JP expansion sets. |
+| **17** | `query_jp_academic_papers_and_patents` | `$0.006` | `jp-academic-rnd-patent-citation-feed` | OpenAlex high-citation Japanese university/institute papers (CC0), NIH PubMed biomedical articles & JPO R&D patent citations. |
+| **18** | `query_jp_corporate_reputation_and_sanctions` | `$0.006` | `jp-entity-reputation` | All 5,858,407 JP corporations (10,000 R2 shards), 44,227 corporate domains, 2.47M NTA invoices, co-located address density, 62,630 Gov Unified Qualifications (`gov_qualification`), 4,357 GLEIF LEIs (`gleif_lei`), 3,061 EDINET GC/amendments (`edinet_gc_amendments`), 14,053 Kanpo notices, PARRY check & 26,364 OFAC sanctions (`ofac_sanctions`) via `lookup`, `screen`, or 1,000-entity `batch`. |
 
 ---
 
-## All 126 MCP Tools Grouped by Stream
+## Backward-Compatible Legacy Tool Aliases (126 Tools — 100% Supported on `tools/call` & `?profile=full`)
 
-| Stream ID | Count | MCP Tool Names (`1 Free + 16 Primary + 109 Verb Tools`) |
-| :--- | :---: | :--- |
-| **`probe-inventory`** *(FREE `$0`)* | **1** | `probe_inventory` |
-| **`jp-entity-reputation`** | **21** | `jp_entity_reputation`, `verify_jp_corporate_substance`, `filter_virtual_office_entities`, `screen_sales_list_noise`, `verify_jp_counterparty_kyb`, `verify_counterparty_batch`, `check_jp_phone_domain_parry`, `screen_tokyo_clean_b2b_corporations`, `screen_osaka_clean_b2b_corporations`, `lookup_jp_corp_by_official_domain`, `filter_jp_corps_with_gov_procurement_track_record`, `check_jp_corp_name_and_address_churn_history`, `audit_jp_vendor_onboarding_compliance`, `lookup_jp_gleif_lei_and_english_name`, `filter_jp_lapsed_lei_corporations`, `screen_ofac_crypto_wallet_sanctions`, `screen_ofac_counterparty_entities`, `lookup_jp_gov_unified_qualification_rank`, `filter_jp_grade_a_gov_qualified_corporations`, `screen_jp_edinet_going_concern_corporations`, `diff_jp_edinet_amended_securities_reports` |
-| **`ansr-golf-ev-engine`** | **13** | `ansr_golf_ev_engine`, `calculate_golf_shot_ev`, `calculate_golf_strokes_gained`, `calculate_golf_target_ev_distance`, `calculate_golf_shot_dispersion`, `search_jp_golf_courses`, `calculate_golf_hole_gameplan`, `compare_golf_ev_across_all_lies`, `calculate_golf_putting_expected_strokes`, `calculate_golf_ob_and_penalty_strokes_gained`, `calculate_golf_tee_shot_dispersion_ellipse`, `calculate_golf_approach_shot_dispersion_ellipse`, `search_jp_golf_courses_by_prefecture` |
-| **`jp-company-kyb-registry-delta`** | **9** | `jp_company_kyb_registry_delta`, `check_jp_invoice_status`, `search_jp_new_incorporations`, `check_jp_company_recalls_and_violations`, `search_jp_consumer_product_recalls`, `check_jp_invoice_validity_at_date`, `check_jp_labor_standards_referral_records`, `check_jp_fsa_unregistered_operator_warnings`, `track_jp_corporate_relocations_and_closures` |
-| **`domain-lookup`** | **8** | `domain_lookup`, `check_domain_b2a_readiness_and_dmarc`, `check_domain_dns_rdap_and_tech_stack`, `inspect_domain_llms_txt_and_agents_md`, `audit_domain_spf_dmarc_deliverability`, `inspect_domain_robots_ai_bot_policy`, `lookup_domain_rdap_expiration_and_registrar`, `measure_domain_ttfb_and_cdn_stack` |
-| **`jp-giteki-tenders-intel`** | **8** | `jp_giteki_tenders_intel`, `search_jp_giteki_unreleased_devices`, `search_jp_gov_public_tenders`, `search_jp_gov_procurement_awards`, `search_jp_public_subsidies_jgrants`, `filter_jp_giteki_iot_and_wifi_certifications`, `search_jp_ministry_it_and_cloud_tenders`, `lookup_jp_corp_government_contract_history` |
-| **`ats-jobs`** | **7** | `ats_jobs`, `search_ats_job_postings_delta`, `track_greenhouse_job_board_deltas`, `track_lever_job_board_deltas`, `track_ashby_job_board_deltas`, `filter_ats_new_and_removed_job_postings`, `search_ats_engineering_and_ai_roles` |
-| **`jp-court-real-estate-auctions`** | **7** | `jp_court_real_estate_auctions`, `search_jp_court_real_estate_auctions`, `search_jp_court_auction_comps`, `search_jp_court_auction_period_announcements`, `search_tokyo_court_real_estate_auctions`, `search_osaka_court_real_estate_auctions`, `filter_court_auctions_by_valuation_range` |
-| **`jp-edinet-financial-macro-feed`** | **7** | `jp_edinet_financial_macro_feed`, `search_jp_edinet_securities_filings`, `get_jp_jgb_yield_curve_and_fx_macro`, `search_jp_national_diet_and_egov_laws`, `diff_jp_tdnet_revisions`, `lookup_edinet_filings_by_security_code`, `track_jp_large_shareholding_reports` |
-| **`jp-places-poi-geospatial-intel`** | **7** | `jp_places_poi_geospatial_intel`, `search_jp_area_poi_and_facilities`, `check_jp_location_seismic_and_plateau_3d`, `search_poi_hospitals_near_station_or_coords`, `search_poi_gov_contractors_near_location`, `search_poi_court_foreclosures_near_location`, `search_poi_gtfs_transit_and_3d_city_models` |
-| **`olipai-jp-tcg-collectibles-market`** | **7** | `olipai_jp_tcg_collectibles_market`, `get_jp_tcg_collectibles_floor_price`, `track_jp_tcg_market_spread_delta`, `get_jp_pokemon_card_secondary_market_index`, `get_jp_mtg_collector_foil_market_index`, `get_jp_yugioh_ocg_quarter_century_market_index`, `list_jp_pokemon_tcg_expansion_sets` |
-| **`cisa-kev-threat-ai-status`** | **6** | `cisa_kev_threat_ai_status`, `search_cisa_kev_exploited_vulnerabilities`, `search_cisa_kev_ransomware_campaigns`, `check_ai_cloud_provider_status`, `lookup_cve_in_cisa_kev_catalog`, `monitor_llm_and_cloud_api_outages` |
-| **`google-trends`** | **5** | `google_trends`, `query_google_trends_and_autocomplete`, `get_jp_daily_trending_searches_rss`, `get_us_daily_trending_searches_rss`, `expand_keyword_google_autocomplete_queries` |
-| **`jp-healthcare-hospitals-directory`** | **5** | `jp_healthcare_hospitals_directory`, `search_jp_hospitals_and_medical_facilities`, `search_tokyo_hospitals_and_clinics`, `search_osaka_hospitals_and_clinics`, `filter_jp_hospitals_with_official_websites` |
-| **`jp-patent-saas-b2a-delta`** | **5** | `jp_patent_saas_b2a_delta`, `search_jp_patent_examination_status`, `check_jp_saas_pricing_and_b2a_diff`, `lookup_jp_corporate_patents_by_number`, `monitor_jp_enterprise_ai_crawler_policies` |
-| **`jp-real-economy-geospatial-feed`** | **5** | `jp_real_economy_geospatial_feed`, `get_tokyo_toyosu_wholesale_market_prices`, `search_jp_plateau_3d_and_gspace_geospatial`, `query_jp_estat_housing_and_construction_stats`, `query_jp_solar_irradiance_and_jma_seismic_feed` |
-| **`jp-academic-rnd-patent-citation-feed`** | **5** | `jp_academic_rnd_patent_citation_feed`, `search_jp_academic_papers_and_patents`, `track_jp_biotech_ai_rnd_citations`, `search_jp_top_cited_openalex_papers`, `search_jp_corporate_jpo_rnd_citations` |
+All 126 legacy tool names (`probe_inventory` + 16 legacy primary stream names + 109 specialized verb tools such as `verify_counterparty_batch`, `screen_ofac_counterparty_entities`, `lookup_jp_gov_unified_qualification_rank`, `calculate_golf_shot_ev`, etc.) remain **100% callable** on `POST /mcp` (`tools/call`) and inspectable via `POST /mcp?profile=full` (144 total tools) or `POST /mcp?profile=legacy` (126 legacy tools).
 
 ---
 

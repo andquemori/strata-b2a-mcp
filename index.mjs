@@ -11,8 +11,10 @@
  *   https://strata.andque.com/.well-known/x402.json
  *
  * - 1st Floor (FREE / No API Key Required):
- *     `initialize`, `notifications/initialized`, `ping`, `tools/list` (126 tools),
- *     and `tools/call` with `name: "probe_inventory"` ($0.000).
+ *     `initialize`, `notifications/initialized`, `ping`, `tools/list` (18 canonical tools;
+ *     `?profile=full` returns all 144 callable tools including 126 legacy aliases),
+ *     and `tools/call` with `name: "list_b2a_data_streams"` or `"probe_stream_inventory"`
+ *     (legacy `"probe_inventory"` also accepted at $0.000).
  * - 2nd Floor (Full Structured Data Execution):
  *     Pass `MCP_API_KEY` env var (forwarded as `X-MCP-API-Key`), or use instant
  *     x402 v2 Base Mainnet USDC paywall / Apify Store Pay-Per-Event links returned
