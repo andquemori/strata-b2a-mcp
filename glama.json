@@ -13,6 +13,8 @@
   "discoveryUrl": "https://strata.andque.com/.well-known/mcp.json",
   "documentationUrl": "https://strata.andque.com/llms.txt",
   "privacyPolicyUrl": "https://strata.andque.com/privacy",
+  "termsOfServiceUrl": "https://strata.andque.com/terms",
+  "supportUrl": "https://strata.andque.com/support",
   "x402DiscoveryUrl": "https://strata.andque.com/.well-known/x402.json",
   "apifyStoreUrl": "https://apify.com/andque"
 }

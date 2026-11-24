@@ -10,6 +10,8 @@
   },
   "websiteUrl": "https://strata.andque.com",
   "privacyPolicyUrl": "https://strata.andque.com/privacy",
+  "termsOfServiceUrl": "https://strata.andque.com/terms",
+  "supportUrl": "https://strata.andque.com/support",
   "documentationUrl": "https://strata.andque.com/llms.txt",
   "remotes": [
     {

@@ -31,6 +31,8 @@
 - **MCP Discovery Manifest**: `https://strata.andque.com/.well-known/mcp.json`
 - **x402 v2 Discovery Manifest**: `https://strata.andque.com/.well-known/x402.json`
 - **Zero-PII Privacy Policy**: `https://strata.andque.com/privacy` (`https://strata.andque.com/.well-known/privacy.json`)
+- **Terms of Service**: `https://strata.andque.com/terms` (`https://strata.andque.com/terms.txt`)
+- **Technical Support & Live Status**: `https://strata.andque.com/support` (`https://strata.andque.com/health`)
 - **AI Guide (`/llms.txt`)**: `https://strata.andque.com/llms.txt`
 - **Legacy Parallel Mirror**: `https://trashpan-recycle-worker.moremasatoshi.workers.dev/mcp`
 
