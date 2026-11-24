@@ -66,7 +66,7 @@ async function forwardJsonRpcLine(line) {
   const headers = {
     'Content-Type': 'application/json',
     'Accept': 'application/json',
-    'User-Agent': 'Strata-B2A-MCP-Stdio-Bridge/2.7.1 (+https://strata.andque.com)',
+    'User-Agent': 'Strata-B2A-MCP-Stdio-Bridge/2.8.0 (+https://strata.andque.com)',
   };
   if (MCP_API_KEY) {
     headers['X-MCP-API-Key'] = MCP_API_KEY;
