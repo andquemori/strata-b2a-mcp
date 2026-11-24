@@ -3,7 +3,7 @@
   "name": "io.github.andquemori/strata-b2a-mcp",
   "title": "STRATA & TrashPan B2A Public Data, JP KYB, GovRank, EDINET, LEI, OFAC & Golf EV MCP",
   "description": "Zero-PII B2A MCP: 16 streams, 126 tools, JP KYB, GovRank, EDINET, LEI, OFAC & Golf EV ($0 probe)",
-  "version": "2.7.0",
+  "version": "2.7.1",
   "repository": {
     "url": "https://github.com/andquemori/strata-b2a-mcp",
     "source": "github"
@@ -27,7 +27,7 @@
     {
       "registryType": "npm",
       "identifier": "@andq/strata-b2a-mcp",
-      "version": "2.7.0",
+      "version": "2.7.1",
       "transport": {
         "type": "stdio"
       },
