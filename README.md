@@ -7,7 +7,7 @@
 ![STRATA × TrashPan Interactive Storefront](./docs/storefront-preview.png)
 
 ### Verified Global Registry & Audit Links
-- **Official MCP Registry (`v2.6.0`)**: `com.andque/strata-b2a-mcp` & `com.andque/agent-data` ([Search on registry.modelcontextprotocol.io](https://registry.modelcontextprotocol.io/v0/servers?search=andque))
+- **Official MCP Registry (`v2.7.0`)**: `com.andque/strata-b2a-mcp` & `com.andque/agent-data` ([Search on registry.modelcontextprotocol.io](https://registry.modelcontextprotocol.io/v0/servers?search=andque))
 - **MCP.so (Verified & Featured)**: [mcp.so/servers/strata-trashpan-b2a-clean-data-mcp-server](https://mcp.so/servers/strata-trashpan-b2a-clean-data-mcp-server)
 - **x402scan (`32/32` OpenAPI 3.1 Routes Indexed)**: [x402scan.com/server/85a5783a-7282-4684-b5e7-d2b524c4e7bc](https://www.x402scan.com/server/85a5783a-7282-4684-b5e7-d2b524c4e7bc)
 - **Lumière PayCheck (`16/16` Paid-Test Verified & `Proceed`)**: [lumierepaycheck.org/sellers/strata.andque.com](https://lumierepaycheck.org/sellers/strata.andque.com) (7d Live Uptime) | [Worker `16/16` Grade A](https://lumierepaycheck.org/sellers/trashpan-recycle-worker.moremasatoshi.workers.dev)
@@ -108,7 +108,7 @@ claude mcp add --transport http strata-b2a https://strata.andque.com/mcp
 | **14** | `jp-places-poi-geospatial-intel`<br>(`jp_places_poi_geospatial_intel`) | `$0.005` | `andque/jp-places-poi-geospatial-intel` *(Queued)* | 100% Legal Japan Area POI, GSI Geocoding & 1m Laser Elevation, NIED J-SHIS Seismic Hazard, MHLW Hospitals & PLATEAU 3D |
 | **15** | `olipai-jp-tcg-collectibles-market`<br>(`olipai_jp_tcg_collectibles_market`) | `$0.006` | `andque/olipai-jp-tcg-collectibles-market` *(Queued)* | OLIPAI Japan Trading Card Game (Pokemon / JP Collector Foil MTG / Yu-Gi-Oh!) Secondary Market Floor Price & Cross-Venue Spread |
 | **16** | `jp-academic-rnd-patent-citation-feed`<br>(`jp_academic_rnd_patent_citation_feed`) | `$0.006` | `andque/jp-academic-rnd-patent-citation-feed` *(Queued)* | Japan Academic R&D High-Citation Papers (OpenAlex CC0), Biomedical/AI Articles (NIH PubMed) & JPO Patent Citations |
-| **17** | **`jp-entity-reputation`**<br>(`jp_entity_reputation`) | **`$0.006`** | `andque/jp-entity-reputation` *(Queued)* | **Japan Corporate Substance, GLEIF LEI, OFAC Sanctions & Counterparty Reputation Intelligence (`5,000 Verified Hot-Index Corporations [100% NTA Invoice Verified]` + `16,247 Unified Gov Qualification A–D Grade Corporations` + `3,061 EDINET v2 Going Concern & Amendment Filings` + `4,357 GLEIF JP LEI Corporations` + `26,338 OFAC Clean Organizational Entities, AKAs & Crypto Wallets` + `Kanpo Corporate Events` / Batch up to 1,000 corps at `$0.006` flat)** |
+| **17** | **`jp-entity-reputation`**<br>(`jp_entity_reputation`) | **`$0.006`** | `andque/jp-entity-reputation` *(Queued)* | **Japan Corporate Substance, GLEIF LEI, OFAC Sanctions & Counterparty Reputation Intelligence (`5,000 Verified Hot-Index Corporations [100% NTA Invoice Verified]` + `47,019 Unified Gov Qualification A–D Grade Corporations` + `3,061 EDINET v2 Going Concern & Amendment Filings` + `4,357 GLEIF JP LEI Corporations` + `26,364 OFAC Clean Organizational Entities, AKAs & Crypto Wallets` + `Kanpo Corporate Events` / Batch up to 1,000 corps at `$0.006` flat)** |
 
 ---
 
